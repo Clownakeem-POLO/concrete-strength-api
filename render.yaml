@@ -1,0 +1,13 @@
+# Deploy the container to Render's free tier.
+# Point a new Render "Blueprint" at this repo and it reads this file.
+# The free instance sleeps after inactivity and cold starts in a few seconds.
+services:
+  - type: web
+    name: concrete-strength-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8000

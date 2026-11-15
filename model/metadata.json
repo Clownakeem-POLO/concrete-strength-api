@@ -1,0 +1,43 @@
+{
+  "model_version": "1.0.0",
+  "algorithm": "gradient_boosting",
+  "features": [
+    "cement",
+    "blast_furnace_slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "target": "compressive_strength",
+  "target_units": "MPa",
+  "metrics": {
+    "linear_regression": {
+      "rmse": 9.7967,
+      "mae": 7.7454,
+      "r2": 0.6275
+    },
+    "random_forest": {
+      "rmse": 5.5938,
+      "mae": 3.7981,
+      "r2": 0.8786
+    },
+    "gradient_boosting": {
+      "rmse": 4.6482,
+      "mae": 3.2959,
+      "r2": 0.9162
+    }
+  },
+  "best_metrics": {
+    "rmse": 4.6482,
+    "mae": 3.2959,
+    "r2": 0.9162
+  },
+  "n_train": 824,
+  "n_test": 206,
+  "trained_at": "2026-11-15T09:56:33.928176+00:00",
+  "sklearn_version": "1.9.1",
+  "python_version": "3.14.6"
+}

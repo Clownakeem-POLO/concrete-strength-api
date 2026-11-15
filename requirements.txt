@@ -1,0 +1,15 @@
+# Serving + ML runtime
+fastapi==0.163.1
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+scikit-learn==1.9.1
+pandas==3.1.1
+numpy==2.5.4
+joblib==1.6.0
+
+# Reading the raw UCI .xls dataset (training only, harmless at serve time)
+xlrd==2.0.2
+
+# Tests
+pytest==9.2.0
+httpx==0.28.1
