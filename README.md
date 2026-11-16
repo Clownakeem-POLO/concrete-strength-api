@@ -1,5 +1,8 @@
 # Concrete Compressive Strength API
 
+**Live API:** https://concrete-strength-api-2lr4.onrender.com &middot; **interactive docs:** https://concrete-strength-api-2lr4.onrender.com/docs
+(Free Render instance, so the first request after it has been idle takes ~50 seconds to wake.)
+
 Predict the compressive strength of a concrete mix (in MPa) from its eight ingredients, served as a REST API.
 
 This is a small but complete MLOps slice: train a model, serve it behind a clean FastAPI service, containerize it, test it, and wire up CI. I built it as a portfolio piece that sits where mechanical/materials engineering meets ML. Concrete strength is a problem I actually understand from the materials side, which is why I picked it over yet another generic demo dataset.
